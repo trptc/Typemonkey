@@ -1,0 +1,58 @@
+{
+  "name": "quota",
+  "version": "0.1.0",
+  "description": "Random quote API",
+  "author": "Luke Peavey",
+  "private": true,
+  "repository": {
+    "url": "https://github.com/lukepeavey/quota"
+  },
+  "license": "MIT",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "NODE_ENV=development nodemon",
+    "start:debug": "NODE_ENV=development --inspect nodemon",
+    "lint": "yarn run eslint . --cache --color && echo \"eslint: no lint errors\"",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "{src,data}/**/*.{js,css,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "4.17.1",
+    "http-errors": "^1.7.2",
+    "jsonfile": "5.0.0",
+    "lodash": "4.17.11"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "husky": "^2.4.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.1",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "shortid": "^2.2.14"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "RESTful",
+    "rest-api",
+    "micro-service"
+  ]
+}
