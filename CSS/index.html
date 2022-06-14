@@ -15,19 +15,37 @@
     <header>
         <div class="wrapper">
             <nav>
-                <a href="#" class="logo">shotsnapp</a>
-                <a href="#" class="login__btn"><span class="op-lock"></span>login</a>
+                <a href="#" class="logo">Typemonkey</a>
+                <a href="https://github.com/trptc" class="login__btn"><span class="op-github"></span>
+                    trptc</a>
             </nav>
         </div>
     </header>
     <section>
         <div class="wrapper">
             <div class="banner">
-                <h2 class="banner__text">Show off your.</h2>
-                <p class="banner__desc">Create beautiful mockup for you app and website</p>
-                <a href="#" class="btn">Try it out for FREEE <span class="op-arrow-right"></span></a>
+                <h2 class="banner__head"><span class="headline"></span></h2>
+                <p class="banner__desc">English Typing Test</p>
+                <a href="typingtest.html" class="btn">Typing Test<span class="op-arrow-right"></span></a>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                <a href="https://github.com/trptc/Typemonkey" class="btn">Open Source<span class="op-arrow-right"></span></a>
             </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script>
+        var type = document.querySelector(".headline");
+
+        var typewriter = new Typewriter(type,{
+            loop:true
+        });
+        typewriter.typeString('Typemonkey')
+                    .pauseFor(15000)
+                    .deleteAll()
+                    .start();
+    </script>
 </body>
 </html>
+
+<!-- made by trptc -->
