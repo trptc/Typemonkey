@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typemonkey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet">
+                    
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <a href="#" class="logo">Typemonkey</a>
+                <a href="https://github.com/trptc" class="login__btn"><span class="op-github"></span>
+                    trptc</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="banner">
+                <h2 class="banner__head"><span class="headline"></span></h2>
+                <p class="banner__desc">English Typing Test</p>
+                <a href="typingtest/index.html" class="btn">Typing Test<span class="op-arrow-right"></span></a>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                <a href="https://github.com/trptc/Typemonkey" class="btn">Open Source<span class="op-arrow-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script>
+        var type = document.querySelector(".headline");
+
+        var typewriter = new Typewriter(type,{
+            loop:true
+        });
+        typewriter.typeString('Typemonkey')
+                    .pauseFor(15000)
+                    .deleteAll()
+                    .start();
+    </script>
+</body>
+</html>
+
+<!-- made by trptc -->
