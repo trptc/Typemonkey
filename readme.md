@@ -3,3 +3,5 @@
 <b>Its fake http://monkeytype.com </b> </br>
 <b>A typing practice website created only for fun</b> </br>
 <b> You can try here ~> http://type.dothome.co.kr/#
+
+<b> data source ~> https://github.com/lukePeavey/quotable
